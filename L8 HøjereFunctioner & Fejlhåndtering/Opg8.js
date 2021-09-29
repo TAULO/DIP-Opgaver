@@ -22,6 +22,16 @@ let personer = [
     }
 ];
 
+// map: mapper alle i følge af dens parameter 
+let navnMap = personer.map(person => person.navn);
+console.log("Navn map: " + navnMap)
+
+let alderMap = personer.map(person => person.alder);
+console.log("Alder map: " + alderMap);
+
+let teleMap = personer.map(person => person.mobilnummer);
+console.log("Mobilnummer map: " + teleMap);
+
 console.log(personer)
 
 // find person med bestemt telefon nr
