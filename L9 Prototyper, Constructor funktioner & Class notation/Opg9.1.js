@@ -16,6 +16,12 @@ class Studerende extends Person {
     equals(s) { return s.navn === this.navn && s.id === this.id && s.constructor === Studerende }
 }
 
+class Kat {
+    constructor(navn) {
+        this.navn = navn;
+    }
+}
+
 let person1 = new Person("Simon");
 let person2 = new Person("Simon");
 let person3 = new Person("Josefine");
@@ -25,6 +31,10 @@ let studerende1 = new Studerende("Casper", 1);
 let studerende2 = new Studerende("Casper", 1);
 let studerende3 = new Studerende("Fin", 2);
 let studerende4 = new Studerende("Sigurd", 3);
+
+let kat1 = new Kat("Mewosa");
+let kat2 = new Kat ("MGK");
+
 
 
 // tjekker om to personer er det samme
@@ -37,6 +47,9 @@ console.log(person1.compare(person2, person3));
 console.log(studerende1.equals(studerende2));
 
 // sammenligner to studerende 
-console.log();
+console.log(studerende1.compare(studerende2, studerende3));
 
-let personer = [person1, person2, person3, person4, studerende1, studerende2, studerende3, studerende4];
+let personer = [person1, person2, person3, person4, studerende1, studerende2, studerende3, studerende4, kat1, kat2];
+
+personer.sort((a, b) => a.navn > b.navn ? 1 : -1) 
+console.log(personer);
