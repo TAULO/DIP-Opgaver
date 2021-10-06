@@ -1,0 +1,23 @@
+const isMomHappy = false;
+
+//promise 
+const willIgetNewPhone = new Promise((resolve, reject) => {
+    if(isMomHappy) {
+        const phone = {
+            brand: "Samsung", 
+            color: "Blue"
+        };
+        resolve(phone); 
+    } else {
+        const fejl = new Error("Mor er ikk glad");
+        reject(fejl);
+    }
+});
+
+const askMom = function() {
+    willIgetNewPhone
+    .then()
+    .catch(error => console.log(error.message));
+}
+
+askMom();
