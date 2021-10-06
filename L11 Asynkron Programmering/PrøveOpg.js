@@ -1,4 +1,4 @@
-const isMomHappy = false;
+const isMomHappy = true;
 
 //promise 
 const willIgetNewPhone = new Promise((resolve, reject) => {
@@ -16,7 +16,7 @@ const willIgetNewPhone = new Promise((resolve, reject) => {
 
 const askMom = function() {
     willIgetNewPhone
-    .then()
+    .then(message => console.log(message))
     .catch(error => console.log(error.message));
 }
 
