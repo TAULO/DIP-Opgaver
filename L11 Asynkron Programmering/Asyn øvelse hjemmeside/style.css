@@ -1,0 +1,36 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    color: bisque;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    flex-basis: 20%;
+    margin-bottom: 20%;
+    align-items: center;
+}
+
+span {
+    font-size: small;
+    color: bisque;
+    text-align: center;
+}
+
+img {
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1px, 1px, 3px, 0.2px;
+}
