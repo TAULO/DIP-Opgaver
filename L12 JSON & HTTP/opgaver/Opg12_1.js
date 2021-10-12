@@ -1,22 +1,27 @@
 //opgave 12.1
 const earthquakeURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
+const table = document.getElementsByTagName("table");
 
-console.log("hello");
-
-async function get(url) {
-    const respons = await fetch(url);
-    if (respons.status !== 200) 
-            throw new Error(respons.status);
-        return await respons.json();
+function createElement(element) {
+    return document.createElement(element);
 }
 
-async function main(url) {
-    try {
-        let respons = await get(url);
-        console.log(respons);
-    } catch (fejl) {
-        console.log(fejl);
+async function get() {
+    const response = await fetch(earthquakeURL);
+    data = await response.json();
+
+    for (let i = 0; i < data.features.length; i++) {
+        if (data.features[i].properties.mag > 5) {
+            table[0].insertRow().insertCell();
+        }
+    }
+    console.log(data.features)
+
+    for (let i = 0; i < data.features.length; i++) {
+        if (data.features[i].properties.mag > 5) {
+           
+        }
     }
 }
-main(earthquakeURL);
-get(earthquakeURL);
+
+get();
