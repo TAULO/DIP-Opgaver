@@ -51,5 +51,5 @@ console.log(studerende1.compare(studerende2, studerende3));
 
 let personer = [person1, person2, person3, person4, studerende1, studerende2, studerende3, studerende4, kat1, kat2];
 
-personer.sort((a, b) => a.navn > b.navn ? 1 : -1) 
+personer.sort((a, b) => a.navn > b.navn ? 1 : -1);
 console.log(personer);
