@@ -15,8 +15,6 @@ const app = express();
 // console.log("Server started on port 8000");
 
 
-
-app.listen(8000);
 // app.get("/:text", (req, res) => {
 //     figlet.text(req.params.text, (e, d) => {
 //         if (e) throw e
@@ -29,3 +27,6 @@ app.get("/", (req, res) => {
     res.write("<h1> hej med dig </h1>")
     res.end();
 })
+
+app.listen(8020, () => console.log("Lytter på port 8020"));
+
