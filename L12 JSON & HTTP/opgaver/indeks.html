@@ -7,21 +7,20 @@
     <title>Opgave 12.1</title>
     <script src="Opg12_1.js" defer></script>
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
+        tr{
+            display: block; float: left;
+        }
+        th, td {
+            display: block; 
+            border: 2px solid rgb(0, 0, 0);
+            font-size: larger;
+            margin: 2px;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Earthquake above 5.0</h1>
-    <table id="myTable">
-        <tr>
-            <th id="styrke">Styrke</th>
-            <th id="sted">Sted</th>
-            <th>Tidspunkt</th>
-        </tr>
-    </table>
+    <table id="myTable"></table>
 </body>
 </html>
