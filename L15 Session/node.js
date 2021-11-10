@@ -22,7 +22,7 @@ function middlewareFun(req, res, next) {
     console.log("nu sker der noget");
     next();
 }
-// hvis der skrives /* så vil middleware kun køre på den sti
+// hvis der skrives /* så vil middleware kun køre på den
 app.use("/produkts", middlewareFun);
 
 app.get("/", (req, res) => {
