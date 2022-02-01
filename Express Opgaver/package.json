@@ -1,0 +1,20 @@
+{
+  "name": "sp7",
+  "version": "1.0.0",
+  "description": "Den udleverede express-app( denne) indeholder en express.js-applikation, hvor filerne \r index.html, index.js \r skal modificeres for at lave nedenstående webapplikation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app",
+    "dev": "nodemon src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

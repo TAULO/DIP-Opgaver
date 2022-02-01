@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title tools 
+        script(src="index.js" defer)
+    body
+        h1 Værktøjer 
+        table(id="table")
+            th Navn: 
+                tr 
+                    td hammer 
+                tr 
+                    td Sav
+                tr  
+                    td Boremaskine 
+            th Antal: 
+                tr 
+                    td 5
+                tr  
+                    td 7
+                tr  
+                    td 2 
+        //- table  
+        //-     th Navn: 
+        //-     th Antal: 
+        //- each item in arr 
+        //-         tr 
+        //-             td 
+        //-                 p=item.navn 
+        //-         tr 
+        //-             td 
+        //-                 p=item.antal  
+        label(for="l_input" id="label_input") Indtast et værktøj: 
+        input(type="text" id="input_værktøj")
+        button(id="btn_tilføj") tilføj
